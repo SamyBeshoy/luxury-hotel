@@ -1,0 +1,54 @@
+// import variables file
+@use "variables" as *;
+.blog {
+    background-color: #f8f9fa;
+    .container {
+        .text {
+            text-align: center;
+        }
+        .boxs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50PX;
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 21.875em;
+                background: #fff;
+                img {
+                    width: inherit;
+                }
+                div:nth-child(2) {
+                    padding-left: 20px;
+                    color: $main_color;
+                    font-family: serif;
+                    font-size: $font_three;
+                }
+                div:nth-child(3) {
+                    padding-left: 20px;
+                    font-size: $font_six;
+                    color: rgba(48, 47, 47, 0.6235294118);
+                }
+                div:nth-child(4) {
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                    font-size: $font_six;
+                    color: $main_color;
+                    cursor: pointer;
+                    transition: .7s all ;
+                    padding: 12px 30px;                
+                    border: 1px solid $main_color;
+                    width: fit-content;
+                    &:hover {
+                        background: $main_color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+// import variables file
+@use "variables" as *;
+.ads {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.158)), url(../imgs/img_5.jpg);
+    background-color: $main_color;
+    height: fit-content;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 30px;
+        div:nth-child(1) {
+            font-family: serif;
+            font-size: $font_one;
+        }
+        div:nth-child(2) {
+            font-size: $font_five;
+        }
+        i {
+            font-size: $font_seven;
+            cursor: pointer;
+        }
+    }
+}

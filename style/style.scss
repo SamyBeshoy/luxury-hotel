@@ -1,0 +1,30 @@
+// import global file
+@use "global" as *;
+
+// import variables file
+@use "variables" as *;
+
+// import header file
+@use "header" as *;
+
+// import landing file
+@use "landing" as *;
+
+// import landing file
+@use "about" as *;
+
+// import featured file
+@use "featured" as *;
+
+// import ads file
+@use "ads" as *;
+
+// import blog file
+@use "blog" as *;
+
+footer {
+    text-align: center;
+    font-size: $font_five;
+    background: #f2f2f2;
+    padding: 30px;
+}

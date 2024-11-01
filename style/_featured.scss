@@ -1,0 +1,165 @@
+// import variables file
+@use "variables" as *;
+.featured {
+    background-color: #f8f9fa !important;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        .box {
+            display: flex;
+            height: 39.375em;
+            gap: 30px;
+            margin-top: 50PX;
+            .box1 {
+                width: 31.25em;
+                border: 1px solid #e6e6e6;
+                border-top: none;
+                .smallBox {
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/img_1.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-clip: border-box;
+                    width: inherit;
+                    height: 18.75em;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 10px;
+                    font-size: $font_six;
+                    cursor: pointer;
+                    div:nth-child(1) {
+                        color: white;
+                        margin-bottom: 25px;
+                        margin-left: 20px;
+                    }
+                    div:nth-child(2) {
+                        margin-bottom: 20px;
+                        padding: 5px 10px;
+                        background: #ffc107;
+                        height: fit-content;
+                        color: white;
+                        border-radius: 4px;
+                    }
+                }
+                .textBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: left;
+                    gap: 30px;
+                    background-color: rgb(255, 255, 255);
+                    height: 20.625em;
+                    padding-left: 20px;
+                    div:nth-child(1) {
+                        color: $main_color;
+                        font-size: $font_two;
+                        font-family: serif;
+                    }
+                    div:nth-child(2),
+                    div:nth-child(3) {
+                        color: #302f2f9f;
+                        font-size: $font_six;
+                    }
+                }
+            }
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .smallBox {
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/img_2.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-clip: border-box;
+                    width: 18.75em;
+                    height: 18.75em;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 10px;
+                    font-size: $font_six;
+                    cursor: pointer;
+                    div:nth-child(1) {
+                        color: white;
+                        margin-bottom: 25px;
+                        margin-left: 20px;
+                    }
+                    div:nth-child(2) {
+                        margin-bottom: 20px;
+                        padding: 5px 10px;
+                        background: #ffc107;
+                        height: fit-content;
+                        color: white;
+                        border-radius: 4px;
+                    }
+                }
+                .smallBox-2 {
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/img_4.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-clip: border-box;
+                    width: 18.75em;
+                    height: 18.75em;
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 10px;
+                    font-size: $font_six;
+                    cursor: pointer;
+                    div:nth-child(1) {
+                        color: white;
+                        margin-bottom: 25px;
+                        margin-left: 20px;
+                    }
+                    div:nth-child(2) {
+                        margin-bottom: 20px;
+                        padding: 5px 10px;
+                        background: #ffc107;
+                        height: fit-content;
+                        color: white;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .featured {
+        .container {
+            .box {
+                flex-direction: column;
+                height: fit-content;
+                justify-content: center;
+                align-items: center;
+                .box2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .featured {
+        background-color: #f8f9fa !important;
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            .box {
+                display: flex;
+                height: 39.375em;
+                gap: 30px;
+                margin-top: 50PX;
+                .box1 {
+                    width: 21.875em;
+                }
+            }
+        }
+    }
+}

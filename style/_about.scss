@@ -1,0 +1,51 @@
+// import variables file
+@use "variables" as *;
+.about {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        .boxOne {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+            div:nth-child(3) {
+                color: #ccc;
+                font-size: $font_six;
+                line-height: 1.5;
+            }
+        }
+        .boxTwo {
+            img {
+                width: 31.25em;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .about {
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .about {
+        .container {
+            .boxTwo {
+                img {
+                    width: 21.875em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+include mixin.pug
+doctypehtml
+html(lang="en")
+    block head
+        head
+            +head("Luxury Hotel")
+    body
+        block scroll_btn
+            <span class="top show"><i class="fa-solid fa-arrow-up"></i></span>
+        block header
+            header
+                .container 
+                    .logo
+                        a(href="index.html") LUXURYHOTEL
+                    nav
+                        span: a.active(href="index.html") Home
+                        span: a(href="#about") About 
+                        span: a(href="#featured") Rooms
+                        span.page#pageMenu
+                            a(href="#page") Pages 
+                            #menubar 
+                                span: a(href="#blog") Blog 
+                        span: a(href="index.html") Contact
+                    .sidenav#sidenav 
+                        div.parent 
+                            div.ch1
+                                span: a(href="index.html") LUXURYHOTEL
+                            div.ch2    
+                                a(href="##" class="closebtn" onclick="closeNav()") &times;
+                        div
+                            a(href="index.html") Home
+                            a(href="#about") About 
+                            a(href="#featured") Rooms
+                            a(href="#blog") Blog 
+                            a(href="index.html") Contact
+                    .boxThree
+                        <span onclick="openNav()"class="tog"><i class="fa-solid fa-bars"></i></span> 
+        block landing
+            .landing#landing
+                .container
+                    .text
+                        div Welcome To Our Luxury Rooms
+                        div Discover our world's #1 Luxury Room For VIP.
+                        a(href="#").btn Book Now
+        block about
+            section.about#about
+                .container
+                    .boxOne
+                        div.tit_small Stay with our luxury rooms
+                        div.title Stay and Enjoy
+                        div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus illo similique natus, a recusandae? Dolorum, unde a quibusdam est? Corporis deleniti obcaecati quibusdam inventore fuga eveniet! Qui delectus tempore amet!
+                        a(href="#").btn More About Us 
+                    .boxTwo
+                        img(src="imgs/f_img_1.png", alt="rooms")
+        block featured
+            section.featured#featured
+                .container
+                    .text
+                        div.tit_small Our Luxury Rooms
+                        div.title Featured Rooms
+                    .box 
+                        .box1
+                            .smallBox
+                                div HOTEL ROOM <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                div From 22$
+                            .textBox
+                                div Presidential Room
+                                div <i class="fa-solid fa-users"></i> 2 Guests <i class="fa-solid fa-crop-simple"></i> 22 ft 2
+                                div Nulla vel metus scelerisque ante sollicitudin. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                a(href="#").btn Book Now From 20$
+                        .box2
+                            .smallBox
+                                div HOTEL ROOM <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                div From 22$
+                            .smallBox-2
+                                div HOTEL ROOM<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                div From 22$
+        block ads
+            section.ads
+                .container
+                    div Relax and Enjoy your Holiday
+                    div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem tempore 
+                        br
+                        | expedita facere facilis, dolores!
+                    <i class="fa-regular fa-circle-play"></i>
+        block blog
+            section.blog#blog
+                .container
+                    .text
+                        div.tit_small Our Blog
+                        div.title Our Recent Blog
+                    .boxs 
+                        .box
+                            img(src="imgs/img_3.jpg", alt="room")
+                            div New Rooms
+                            div Lorem ipsum dolor sit amet, consectetur 
+                                br
+                                | adipisicing elit. Ipsum deserunt illo quis 
+                                br 
+                                | similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                            div Read More
+                        .box
+                            img(src="imgs/img_6.jpg", alt="room")
+                            div New Staff Added
+                            div Lorem ipsum dolor sit amet, consectetur 
+                                br
+                                | adipisicing elit. Ipsum deserunt illo quis 
+                                br 
+                                | similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                            div Read More
+                        .box
+                            img(src="imgs/img_5.jpg", alt="room")
+                            div Big Rooms for All
+                            div Lorem ipsum dolor sit amet, consectetur 
+                                br
+                                | adipisicing elit. Ipsum deserunt illo quis 
+                                br 
+                                | similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                            div Read More
+        block footer
+            footer Copyright 2024 © by Beshoy Samy.
+        block scripts 
+            script(src="main.js")
